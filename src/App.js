@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import SparkView from './views/SparkView';
+import NavigationBar from './Components/NavigationBar';
+import LoadingPage from './Components/LoadingPage';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavigationBar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LoadingPage />} />
+          <Route path="/Home" element={<LoadingPage />} />
+          <Route path="/Login" element={<LoadingPage />} />
+          <Route path="/Spark" element={<SparkView />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
