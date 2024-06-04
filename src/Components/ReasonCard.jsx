@@ -4,12 +4,13 @@ import Card from 'react-bootstrap/Card';
 function ReasonCard(props) {
   const data = props.data;
   return (
-    <Card style={{ maxWidth: '300px', margin: 5 }}>
-      <Card.Header>{data.Title}</Card.Header>
-      {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+    <Card style={{ maxWidth: '300px', margin: 5, border: 'none' }}>
+      <Card.Header style={{ backgroundColor: '#EBC038', fontWeight: 'bold' }}>
+        {data.Title}
+      </Card.Header>
+
       <Card.Body>
         <Card.Text>{data.Desc}</Card.Text>
-        {/* <Button variant="primary">Go somewhere</Button> */}
       </Card.Body>
     </Card>
   );

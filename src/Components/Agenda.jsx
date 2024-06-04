@@ -11,11 +11,11 @@ const Agenda = () => {
   return (
     <Container fluid="md">
       <Row className="mb-5">
-        <HeadingText>The Residential Training Agenda</HeadingText>
-        <SubHeadingText>
+        <HeadingText color="white">The Residential Training Agenda</HeadingText>
+        <SubHeadingText color="white">
           Unleash Your Inner Rotaract Hero: A Training Beyond Ordinary!
         </SubHeadingText>
-        <ParagraphText>
+        <ParagraphText color="white">
           Get ready for a two-day residential training experience that goes
           beyond just learning! This first-ever District 3192 Training will
           equip you with a powerful blend of:
@@ -33,7 +33,7 @@ const Agenda = () => {
       >
         <Row>
           <Col className=" col-3 d-flex align-items-center justify-content-center border-end border-1 border-dark  ">
-            <h3> DAY 1</h3>
+            <SubHeadingText> DAY 1</SubHeadingText>
           </Col>
           <Col className=" col-9 d-flex  align-items-center">
             <UnorderedList>
@@ -60,7 +60,7 @@ const Agenda = () => {
       >
         <Row>
           <Col className="col-3 d-flex align-items-center justify-content-center border-end border-1 border-dark ">
-            <h3> DAY 2</h3>
+            <SubHeadingText> DAY 2</SubHeadingText>
           </Col>
           <Col className="col-9 d-flex align-items-center ">
             <UnorderedList>
@@ -81,12 +81,12 @@ const Agenda = () => {
           </Col>
         </Row>
       </Card>
-      <Row>
-        <SubHeadingText>
+      <Row className="mt-3">
+        <ParagraphText>
           Don't miss out! SPARK is more than just a training – it's an adventure
           that will ignite your passion for Rotaract and equip you to make a
           real difference. See you there, fellow Rotaract Superhero!
-        </SubHeadingText>
+        </ParagraphText>
       </Row>
     </Container>
   );

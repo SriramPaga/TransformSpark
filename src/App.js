@@ -5,6 +5,8 @@ import SparkView from './views/SparkView';
 import NavigationBar from './Components/NavigationBar';
 import LoadingPage from './Components/LoadingPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+// color refernce
+// https://coolors.co/f42845-f37a3e-eea53c-f18f3f-ebc038
 function App() {
   return (
     <div className="App">

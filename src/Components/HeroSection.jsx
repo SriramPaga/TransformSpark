@@ -30,27 +30,33 @@ const HeroSection = () => {
         <Col sm={12} md={6}>
           <CustomeImage src={Image} />
         </Col>
-        <Col sm={12} md={6}>
+        <Col
+          sm={12}
+          md={6}
+          className="d-flex flex-column justify-content-center align-items-center"
+        >
           <Row className="mb-5">
             <HeadingText>Spark: Transform Leaders Training</HeadingText>
           </Row>
           <Row>
-            <ParagraphText>Get ready to shine with SPARK!</ParagraphText>
+            <SubHeadingText>Get ready to shine with SPARK!</SubHeadingText>
           </Row>
           <Row>
-            <SubHeadingText>
+            <ParagraphText>
               Are you passionate about Rotaract? Do you want to learn more? Then
               mark your calendars for SPARK, taking place on 8th and 9th June
               2024 at Dayanand Sagar University on the first day and at Adithya
               Gardens on the second day. This exciting event will feature
               training, networking and a lot of fun!
-            </SubHeadingText>
+            </ParagraphText>
           </Row>
 
           <Button
             style={{
               marginTop: '50px',
               maxWidth: '300px',
+              backgroundColor: '#F62444',
+              border: 'none',
             }}
             href="https://forms.gle/61adCfSh1ZxM9HGP7 "
             target="_blank"

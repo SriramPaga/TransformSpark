@@ -2,18 +2,21 @@ import React from 'react';
 import { Reasons } from '../Data/Reasons';
 import ReasonCard from './ReasonCard';
 import { Container, Row, Col } from 'react-bootstrap';
+import { HeadingText, ParagraphText } from '../CustomComponents/CustomText';
 const WhyToAttend = () => {
   return (
     <Container>
       <Row className="mb-5">
-        <h3>Who benefits from attending, and why should you? </h3>
-        <h5>
+        <HeadingText color="white">
+          Who benefits from attending, and why should you?{' '}
+        </HeadingText>
+        <ParagraphText color="white">
           Feeling overwhelmed by the challenges of leading your Rotaract Club?
           You're not alone! From member engagement to project execution,
           presidents, vice presidents, secretaries, joint secretaries and
           treasurers face a multitude of demands. But fear not, because Rotaract
           ignites the spark that helps you overcome them all!
-        </h5>
+        </ParagraphText>
       </Row>
       <Row className="d-flex justify-content-center">
         {Reasons.map((data, index) => {
@@ -24,8 +27,10 @@ const WhyToAttend = () => {
           );
         })}
       </Row>
-      <Row>
-        <h5>With Sparks, you'll transform challenges into opportunities!</h5>
+      <Row className='mt-3'>
+        <ParagraphText color="white">
+          With Sparks, you'll transform challenges into opportunities!
+        </ParagraphText>
       </Row>
     </Container>
   );
